@@ -10,11 +10,11 @@ const io = require('socket.io')(server);
 mongoose.connect('mongodb://gonode:gonode123@ds155203.mlab.com:55203/gonode', {
     useNewUrlParser: true
 });
-/*
+/**/
 app.get('/', (req, res) =>{
     return res.send('hello world teste');
 });
-*/
+
 
 app.use((req, res, next)=> {
     req.io = io;
