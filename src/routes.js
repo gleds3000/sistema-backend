@@ -7,7 +7,7 @@ const LikeControllers = require('./controllers/likecontrollers');
 
 /* teste */
 routes.get("/", (req, res) =>{
-    return res.send('hello rotas');
+    return res.send('/index.html');
 });
 // fim do teste 
 routes.get("/tweets", TweetControllers.index);
