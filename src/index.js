@@ -25,6 +25,6 @@ app.use(cors());
 app.use(express.json());
 app.use(require('./routes'));
 
-server.listen(3000, ()=> {
-    console.log(':)servidor iniciado porta 3000 ');
+server.listen(8080, ()=> {
+    console.log(':)servidor iniciado porta 8080 ');
 });
