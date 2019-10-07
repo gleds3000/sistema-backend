@@ -25,6 +25,6 @@ app.use(cors());
 app.use(express.json());
 app.use(require('./routes'));
 
-server.listen(8080, ()=> {
-    console.log(':)servidor iniciado porta 8080 ');
-});
+var Porta = process.env.PORT || 8080
+server.listen(Porta)
+console.log(':)servidor iniciado na porta ', Porta);
